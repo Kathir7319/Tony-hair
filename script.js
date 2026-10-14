@@ -1425,10 +1425,22 @@ function setupBookingModal() {
     });
   }
 
+  function closeModal() {
+    if (modal) {
+      modal.classList.remove("active");
+      document.body.classList.remove("modal-open");
+    }
+  }
+
   if (closeBtn && modal) {
-    closeBtn.addEventListener("click", () => modal.classList.remove("active"));
+    closeBtn.addEventListener("click", closeModal);
     modal.addEventListener("click", (e) => {
-      if (e.target === modal) modal.classList.remove("active");
+      if (e.target === modal) closeModal();
+    });
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && modal.classList.contains("active")) {
+        closeModal();
+      }
     });
   }
 
@@ -1449,7 +1461,7 @@ function setupBookingModal() {
 
       alert(`${successTitle}\n\n${successMsg}\n\nFor immediate service, call (919) 650-2174.`);
       form.reset();
-      modal.classList.remove("active");
+      closeModal();
       showToast(currentLang === "zh" ? "预约已成功提交！" : "Booking request submitted!");
     });
   }
@@ -1465,6 +1477,15 @@ window.openBookingModal = function(serviceId = null) {
   }
 
   modal.classList.add("active");
+  document.body.classList.add("modal-open");
+};
+
+window.closeBookingModal = function() {
+  const modal = document.getElementById("bookingModal");
+  if (modal) {
+    modal.classList.remove("active");
+    document.body.classList.remove("modal-open");
+  }
 };
 
 // Mobile Navigation Toggle

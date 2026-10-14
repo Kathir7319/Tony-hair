@@ -1,6 +1,6 @@
 import os
 import urllib.parse
-from http.server import HTTPServer, SimpleHTTPRequestHandler
+from http.server import ThreadingHTTPServer, SimpleHTTPRequestHandler
 
 class CleanURLHandler(SimpleHTTPRequestHandler):
     def translate_path(self, path):
@@ -27,7 +27,7 @@ class CleanURLHandler(SimpleHTTPRequestHandler):
 if __name__ == '__main__':
     port = 8080
     server_address = ('', port)
-    httpd = HTTPServer(server_address, CleanURLHandler)
+    httpd = ThreadingHTTPServer(server_address, CleanURLHandler)
     print(f"Tony Hair Salon Server running with Clean URLs at http://localhost:{port}/")
     try:
         httpd.serve_forever()
