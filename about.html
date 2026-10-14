@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>About Us | Tony Hair Salon | Cary, NC | 关于我们</title>
+  <meta name="description" content="Learn about Tony Hair Salon in Cary, NC. Master stylists Tony and Tom with 15+ years international experience in precision haircuts, Asian hair styling, and thermal straightening.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23121316'/><text x='50%' y='64%' font-family='Georgia, serif' font-size='56' font-weight='bold' fill='%23c5a059' text-anchor='middle'>T</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <aside class="announcement-bar" aria-label="Business Announcements and Live Status">
+    <div class="container announcement-content">
+      <div class="announcement-left">
+        <a href="reviews" class="badge-pill badge-gold" data-i18n="top_badge">★ 4.4 on Google (160+ Reviews)</a>
+        <span id="liveHoursBadge" class="badge-pill badge-open">
+          <span class="status-dot"></span> <span data-i18n="status_open">Open Today until 7:30 PM</span>
+        </span>
+      </div>
+      <div class="announcement-right">
+        <a href="tel:9196502174" class="phone-quicklink">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          <span data-i18n="call_us">Call (919) 650-2174</span>
+        </a>
+        <button id="langToggleBtn" class="lang-switch" aria-label="Switch Language Between English and Chinese">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+          <span data-i18n="lang_btn">中文 (Chinese)</span>
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="logo" aria-label="Tony Hair Salon Homepage">
+        <div class="logo-symbol">T</div>
+        <div class="logo-text">
+          <span class="logo-title">Tony Hair Salon</span>
+          <span>Cary • North Carolina</span>
+        </div>
+      </a>
+
+      <nav id="mainNav" class="main-nav" aria-label="Main Navigation">
+        <a href="/" class="nav-link" data-i18n="nav_home">Home</a>
+        <a href="about" class="nav-link current" data-i18n="nav_about">About Us</a>
+        <a href="services" class="nav-link" data-i18n="nav_services">Services & Pricing</a>
+        <a href="gallery" class="nav-link" data-i18n="nav_gallery">Gallery</a>
+        <a href="reviews" class="nav-link" data-i18n="nav_reviews">Reviews</a>
+        <a href="contact" class="nav-link" data-i18n="nav_contact">Contact & Hours</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn btn-primary btn-sm" onclick="openBookingModal()" data-i18n="btn_book_online">
+          Book Online Now
+        </button>
+        <button id="mobileToggleBtn" class="mobile-toggle" aria-label="Toggle Mobile Menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Hero Header -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumbs">
+        <a href="/" data-i18n="nav_home">Home</a>
+        <span>/</span>
+        <span data-i18n="nav_about">About Us</span>
+      </div>
+      <span class="section-tag" data-i18n="about_tag">Our Story & Heritage</span>
+      <h1 class="section-title" data-i18n="about_title">High-End Hair Design at Neighborhood Prices</h1>
+    </div>
+  </section>
+
+  <!-- Detailed About Story Section -->
+  <section class="section">
+    <div class="container">
+      <div class="welcome-grid">
+        <div class="welcome-text">
+          <p class="welcome-lead" data-i18n="about_p1">
+            Founded with a commitment to high-end hair design at neighborhood prices, Tony Hair Salon has become a trusted fixture in the Cary and greater Triangle community. Our philosophy is simple: hair care shouldn't be stressful or overly expensive. It should be a precise craft that makes you feel confident the moment you step out of our doors.
+          </p>
+          <p class="welcome-body" data-i18n="about_p2">
+            Our team stays continuously updated on the latest international hair trends, from modern cutting-edge texturizing methods to traditional premium chemical services. Whether you need a simple cleanup, a bold color transformation, or our specialized Magic Straightening, we take the time to consult with you one-on-one. Stop by today and discover the difference a precision cut makes!
+          </p>
+          
+          <div class="welcome-stats">
+            <div class="stat-box">
+              <div class="stat-number">15+</div>
+              <div class="stat-label" data-i18n="stat_experience">Years Combined</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-number">5,000+</div>
+              <div class="stat-label" data-i18n="stat_clients">Happy Clients</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-number">4.4★</div>
+              <div class="stat-label" data-i18n="stat_rating">Google Rating</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="welcome-media">
+          <div class="welcome-img-card">
+            <img 
+              src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=800&q=80" 
+              alt="Tony Hair Salon Cary Interior & Stations"
+              loading="lazy"
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Master Stylists Profiles -->
+      <div class="section-header" style="margin-top: 40px; margin-bottom: 20px;">
+        <span class="section-tag">Meet the Team</span>
+        <h2 class="section-title">Master Stylists Tony & Tom</h2>
+        <p class="section-desc">Over 15 years of veteran styling experience dedicated to your unique hair goals.</p>
+      </div>
+
+      <div class="stylists-grid">
+        <!-- Tony Card -->
+        <div class="stylist-card">
+          <div class="stylist-photo">
+            <img 
+              src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80" 
+              alt="Master Stylist Tony"
+              loading="lazy"
+            >
+          </div>
+          <div class="stylist-info">
+            <span class="stylist-role" data-i18n="stylist_tony_role">Founder & Master Stylist</span>
+            <h3 class="stylist-name">Tony</h3>
+            <p class="stylist-bio" data-i18n="stylist_tony_bio">
+              Known for exacting scissor mastery, effortless two-block cuts, and customized styling suited to your head shape and lifestyle.
+            </p>
+            <div class="stylist-tags">
+              <span class="stylist-tag">Asian Two-Block</span>
+              <span class="stylist-tag">Scissor Texturizing</span>
+              <span class="stylist-tag">Men's Precision Taper</span>
+              <span class="stylist-tag">Kids Styling</span>
+            </div>
+            <div>
+              <button class="btn btn-outline-gold btn-sm" onclick="openBookingModal()">Book with Tony</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tom Card -->
+        <div class="stylist-card">
+          <div class="stylist-photo">
+            <img 
+              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80" 
+              alt="Master Stylist Tom"
+              loading="lazy"
+            >
+          </div>
+          <div class="stylist-info">
+            <span class="stylist-role" data-i18n="stylist_tom_role">Senior Master Stylist</span>
+            <h3 class="stylist-name">Tom</h3>
+            <p class="stylist-bio" data-i18n="stylist_tom_bio">
+              Specializing in thermal magic straightening, dimension-rich balayage, and restorative texture treatments that revitalize hair.
+            </p>
+            <div class="stylist-tags">
+              <span class="stylist-tag">Magic Straightening</span>
+              <span class="stylist-tag">Balayage & Highlights</span>
+              <span class="stylist-tag">Body & Wave Perm</span>
+              <span class="stylist-tag">Color Correction</span>
+            </div>
+            <div>
+              <button class="btn btn-outline-gold btn-sm" onclick="openBookingModal()">Book with Tom</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Why Choose Us Pillars -->
+      <div class="section-header" style="margin-top: 80px; margin-bottom: 40px;">
+        <span class="section-tag" data-i18n="why_tag">The Tony Hair Salon Difference</span>
+        <h2 class="section-title" data-i18n="why_title">Why Choose Our Cary Salon?</h2>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">✨</div>
+          <h3 class="feature-title" data-i18n="feat_1_title">Versatile Style Expertise</h3>
+          <p class="feature-desc" data-i18n="feat_1_desc">
+            Masterful layers, precision texturizing, and trendy specialty styles like the modern Asian two-block cut.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🗣️</div>
+          <h3 class="feature-title" data-i18n="feat_2_title">Bilingual Environment</h3>
+          <p class="feature-desc" data-i18n="feat_2_desc">
+            We proudly serve our local community fluently in both English and Chinese (中文) to ensure perfect communication.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🌿</div>
+          <h3 class="feature-title" data-i18n="feat_3_title">Premium Quality</h3>
+          <p class="feature-desc" data-i18n="feat_3_desc">
+            Complete hair care with premium professional products that keep your hair healthy, vibrant, and strong.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🇺🇸</div>
+          <h3 class="feature-title" data-i18n="feat_4_title">Military Appreciated</h3>
+          <p class="feature-desc" data-i18n="feat_4_desc">
+            We offer an exclusive discount to show our profound gratitude for active and retired service members.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Military Strip Banner -->
+  <section class="military-strip">
+    <div class="container military-content">
+      <div class="military-badge-box">
+        <div class="military-icon">🎖</div>
+        <div class="military-text">
+          <h4 data-i18n="military_title">Military Appreciation Community Discount</h4>
+          <p data-i18n="military_desc">We offer an exclusive discount to show our profound gratitude for active and retired service members.</p>
+        </div>
+      </div>
+      <div>
+        <span class="badge-pill badge-gold" data-i18n="military_badge">Save at Checkout</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="logo">
+            <div class="logo-symbol">T</div>
+            <div class="logo-text">
+              <span class="logo-title">Tony Hair Salon</span>
+              <span>Cary • North Carolina</span>
+            </div>
+          </div>
+          <p>
+            Precision styling, modern Asian hair design, and luxury treatments for the whole family at friendly neighborhood prices.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <ul class="footer-links">
+            <li><a href="/" data-i18n="nav_home">Home</a></li>
+            <li><a href="about" data-i18n="nav_about">About Us</a></li>
+            <li><a href="services" data-i18n="nav_services">Services & Pricing</a></li>
+            <li><a href="gallery" data-i18n="nav_gallery">Gallery</a></li>
+            <li><a href="reviews" data-i18n="nav_reviews">Reviews</a></li>
+            <li><a href="contact" data-i18n="nav_contact">Contact & Hours</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Top Specialties</h4>
+          <ul class="footer-links">
+            <li><a href="services">Asian Two-Block Cut</a></li>
+            <li><a href="services">Magic Straightening</a></li>
+            <li><a href="services">Men's Precision Cut</a></li>
+            <li><a href="services">Balayage & Highlights</a></li>
+            <li><a href="services">Traditional Perm</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Salon Hours</h4>
+          <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 8px;">
+            <strong>Tue – Sun:</strong> 10:00 AM – 7:30 PM
+          </p>
+          <p style="font-size: 0.88rem; color: #ef4444; font-weight: 600; margin-bottom: 16px;">
+            <strong>Monday:</strong> CLOSED
+          </p>
+          <a href="tel:9196502174" class="phone-quicklink" style="font-size: 0.95rem;">
+            (919) 650-2174
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          Website Asset Created for Tony Hair Salon. All content copyright protected by the business owner.
+        </div>
+        <div style="display: flex; gap: 16px;">
+          <span>English & 中文 (Bilingual)</span>
+          <span>•</span>
+          <span>1281 NW Maynard Rd, Cary, NC</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Action Bar -->
+  <aside class="mobile-action-bar">
+    <div class="mobile-action-inner">
+      <a href="tel:9196502174" class="mobile-btn mobile-btn-call">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        <span data-i18n="mob_call">Call Us</span>
+      </a>
+      <button class="mobile-btn mobile-btn-book" onclick="openBookingModal()">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+        <span data-i18n="mob_book">Book Now</span>
+      </button>
+      <a href="https://www.google.com/maps/dir/?api=1&destination=Tony+Hair+Salon+1281+NW+Maynard+Rd+Cary+NC+27513" target="_blank" rel="noopener noreferrer" class="mobile-btn mobile-btn-dir">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polygon points="3 11 22 2 13 21 11 13 3 11"></polygon></svg>
+        <span data-i18n="mob_maps">Directions</span>
+      </a>
+    </div>
+  </aside>
+
+  <!-- Booking Modal -->
+  <div id="bookingModal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-container">
+      <button id="bookingModalClose" class="modal-close-btn" aria-label="Close modal">✕</button>
+      <div class="modal-header">
+        <h3 id="modalTitle" class="modal-title" data-i18n="modal_title">Request an Appointment</h3>
+        <p class="modal-subtitle" data-i18n="modal_subtitle">Book your session with Master Stylists Tony or Tom in Cary, NC.</p>
+      </div>
+
+      <form id="bookingForm" class="booking-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="bookingStylist" data-i18n="label_stylist">Preferred Stylist</label>
+            <select id="bookingStylist" class="form-control">
+              <option value="any" data-i18n="opt_any_stylist">First Available Stylist</option>
+              <option value="tony">Tony (Founder & Master Stylist)</option>
+              <option value="tom">Tom (Senior Master Stylist)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="bookingService" data-i18n="label_service">Select Service</label>
+            <select id="bookingService" class="form-control" required></select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="bookingDate" data-i18n="label_date">Preferred Date</label>
+            <input type="date" id="bookingDate" class="form-control" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="bookingTime" data-i18n="label_time">Preferred Time</label>
+            <select id="bookingTime" class="form-control" required>
+              <option value="10:00 AM">10:00 AM</option>
+              <option value="10:30 AM">10:30 AM</option>
+              <option value="11:00 AM">11:00 AM</option>
+              <option value="11:30 AM">11:30 AM</option>
+              <option value="12:00 PM">12:00 PM</option>
+              <option value="12:30 PM">12:30 PM</option>
+              <option value="1:00 PM">1:00 PM</option>
+              <option value="1:30 PM">1:30 PM</option>
+              <option value="2:00 PM">2:00 PM</option>
+              <option value="2:30 PM">2:30 PM</option>
+              <option value="3:00 PM">3:00 PM</option>
+              <option value="3:30 PM">3:30 PM</option>
+              <option value="4:00 PM">4:00 PM</option>
+              <option value="4:30 PM">4:30 PM</option>
+              <option value="5:00 PM">5:00 PM</option>
+              <option value="5:30 PM">5:30 PM</option>
+              <option value="6:00 PM">6:00 PM</option>
+              <option value="6:30 PM">6:30 PM</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="bookingName" data-i18n="label_name">Full Name</label>
+            <input type="text" id="bookingName" class="form-control" placeholder="Your name" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="bookingPhone" data-i18n="label_phone">Phone Number</label>
+            <input type="tel" id="bookingPhone" class="form-control" placeholder="(919) 000-0000" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="bookingNotes" data-i18n="label_notes">Hair Length / Special Requests (Optional)</label>
+          <textarea id="bookingNotes" class="form-control" rows="2" placeholder="Tell us about your hair type, desired style, or reference details..."></textarea>
+        </div>
+
+        <div class="booking-notice" data-i18n="booking_callout">
+          Note: We will confirm your requested slot within business hours. For immediate same-day bookings, please call (919) 650-2174.
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;" data-i18n="btn_submit_booking">
+          Submit Appointment Request
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
